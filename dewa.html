@@ -11,17 +11,23 @@
 
     while (tanya) {
         var nama = prompt("Masukan Nama Anda : ");
-        var valid = confirm("Apakah Benar Nama Anda " + nama);
-         if (valid){
-             alert("Selamat Datang " + nama);
-             end;
+        if (nama == null){
+            tanya = confirm("Ulangi ?");
+        } else{
+            var valid = confirm("Apakah Benar Nama Anda " + nama);
+            if (valid){
+                alert("Selamat Datang " + nama);
+                end;
 
-         } else{
-             tanya = confirm("Coba Lagi ?") ;
-         }
+            } else{
+                tanya = confirm("Coba Lagi ?") ;
+            }
+
+        }
+
 
     }
-alert("Thank");
+    alert ("Terima Kasih") ;
 </script>
 
 </body>
