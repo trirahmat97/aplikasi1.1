@@ -11,18 +11,18 @@
 
     while (tanya) {
         var nama = prompt("Masukan Nama Anda : ");
-        if (nama == null){
-            tanya = confirm("Ulangi ?");
-        } else{
+        if (nama != null){
             var valid = confirm("Apakah Benar Nama Anda " + nama);
             if (valid){
                 alert("Selamat Datang " + nama);
-                end;
+                tanya = confirm("Coba Lagi ?");
 
             } else{
                 tanya = confirm("Coba Lagi ?") ;
             }
 
+        } else{
+            tanya = confirm("Ulangi ?");
         }
 
 
