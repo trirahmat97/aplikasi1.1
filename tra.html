@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>latihan aplikasi 1</title>
+    </head>
+    <body>
+        <h1>projek aplikasi 1</h1>
+        <ul>
+            <li><a href="tika.html">tika </a></li>
+            <li><a href="edi.html">edi </a></li>
+            <li><a href="riska.html">riska </a></li>
+            <li><a href="gilda.html">gilda </a></li>
+            <li><a href="dewa.html">dewa </a></li>
+            <li><a href="tra.html">tra </a></li>
+        </ul>
+
+        <a href="" onclick="fungsi()">klik aja</a>
+    </body>
+
+    <script>
+
+        function fungsi(){
+            var nama = prompt('masukan nama anda : ');
+            var b = confirm('apakah ini nama anda ?');
+
+            if(b == true){
+                alert(nama);
+            }else{
+                fungsi();
+            }
+        }
+
+
+        var nama = prompt('masukan nama anda : ');
+        var cek = confirm('apakah ini nama anda '+ nama);
+
+        if(cek == true){
+            while(cek){
+                alert(nama);
+                cek = confirm('ingin lsgi ?');
+            }
+        }else{
+
+            window.location.reload();
+            // var nama = prompt('masukan nama anda : ');
+            // var cek = confirm('apakah ini nama anda '+ nama);
+        }
+        
+
+
+        
+
+    </script>
+</html>
